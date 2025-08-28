@@ -74,18 +74,15 @@ WSGI_APPLICATION = 'finalproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
+DATABASES = {  
     'default': {
-        'ENGINE': 'mssql',
-        'NAME': 'cat',  # Replace with your database name
-        'USER': 'sa1',  # Replace with your database username
-        'PASSWORD': 'sa1',  # Replace with your database password
-        'HOST': 'DESKTOP-HJ6CRV6\SQLEXPRESS',  # Replace with your database server (e.g., localhost or IP address)
-        'PORT': '',  # Leave it as an empty string for the default SQL Server port (1433)
-        'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',  # This may vary depending on your SQL Server version
-        },
-    },
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sa',
+        'USER': 'sa',
+        'PASSWORD': 'sa',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
 }
 
 
